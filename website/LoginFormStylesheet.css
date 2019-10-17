@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    background-color: black;
+    color: white;
+}
+
+.header{
+    margin: 30px 10px;
+}
+.header h1{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    padding: 10px 20px;
+    border: 8px outset grey;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: deepskyblue;
+}
+form{
+    margin-top: 8%;
+}
+
+.loginform div{
+    margin: auto;
+    width: 30%;
+    height: 40%;
+    padding: 25px 40px;
+    border: 3px solid deepskyblue;
+    border-radius: 30px;
+    background-color: rgba(255,255,255,0.1);
+}
+@media screen and (max-width: 600px) {
+    .loginform div {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1100px) {
+.loginform div{
+    width: 40%;
+}
+}
+
+
+.loginform div input{
+    margin:10px 10px;
+    width: 60%;
+    border: 2px solid deepskyblue;
+    border-radius: 10px;
+    height: 30px;
+}
+.loginform div label{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+button{
+    margin-left: 40%;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-weight: bold;
+    padding: 10px 20px!important;
+    font-size:20px !important;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+button:hover{
+    background-color: red;
+}

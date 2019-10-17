@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="flex_page_stylesheet.css" type="text/css">
+<!-- 
+Page Loader code starts from here -->
+
+    <style>
+    
+        .loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.thumb {
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="loader">
+<img src="loader.gif" alt="Loading..." />
+</div>
+
+<script>
+    window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden"; // class "loader hidden"
+    });
+</script>
+    
+   <!-- Page Loader animation code ends here --> 
+    
+        <div id="header" class="header">
+        <div>
+            <div class="login">
+                <div><a href="LoginForm.html" target="_blank"><h3>Login</h3></a> </div>
+            </div>
+        </div>
+        <h1>Front-end Development Demo</h1>
+       <a href="signupform.html" target="_blank"><h2 id="signup">Sign Up</h2></a>
+    </div>
+    <div class="sidebar_flex">
+        <div class="sidebar">
+            <a href="#intro" target="_self">
+                <div>
+                    <img src="iconfinder_home_172480.ico" alt="Home icon">
+                    <h4>Home</h4>
+                </div>
+            </a>
+            <a href="#skill">
+                <div>
+                    <img src="iconfinder_bl_1646_Brain_artificial_intelligence_electronic_computer_processor_consciousness_4575061%20(1).png" alt="offers icon">
+                    <h4>Skills</h4>
+                </div>
+            </a>
+            <a href="#contact" target="_self">
+                <div>
+                    <img src="contact.ico" alt="contact icon">
+                    <h4>Contact</h4>
+                </div>
+            </a>
+            <a href="#about" target="_self">
+                <div>
+                    <img src="iconfinder_v-31_3162614.ico" alt="about icon">
+                    <h4>About</h4>
+                </div>
+            </a>
+             <a href="TicTacToe.html" target="_blank">
+                <div>
+                    <img src="game.ico" alt="about icon">
+                    <h4>Games</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="content_flex">
+        <div class="content">
+            <div id="intro">
+                <h1>Introduction</h1>
+                <div>
+                    <h2>Front-End Development</h2>
+                    <p>Now a days in each and every work we need help of many
+                        websites.When you visit a website it design and animations
+                        attracts you to get involved in this website.UI and UX designs
+                        are as same important as Back-end.So you need a responsive and
+                        attractive website to grow your business.To support your business
+                        and grow it up, I'm gonna help you to design a responsive and attractive
+                        website.I hv many offers for webdesign check out in offer sections<a href="#offers" target="_self"></a> </p>
+                </div>
+                <div>
+                    <h2>Responsive Design</h2>
+                    <p>Responsiveness of a website is that how we find
+                        a website same  in all devices.In our daily life we
+                        use laptops, desktop, tablets and smart phones.So we
+                        visit websites through all this devices.For a better experience
+                        that websites should have the same user experience to be
+                        comfortable with it.Responsiveness of a website is a tool to make
+                        it compatible with any device.</p>
+                </div>
+                <div>
+                    <h2>Interactive Web design</h2>
+                    <p>An interactive web design is a design for websites
+                        which uses other inbuilt software,
+                        modules or features aimed at creating an environment
+                        for a website or web application user to be actively
+                        engaged during visit or use as the case may be,
+                        thereby improving his or her user experience (UX)</p>
+                </div>
+            </div>
+            <div id="skill">
+                <h1>Skills</h1>
+                <div>
+                    <h2>HTML</h2>
+                    <p>HTML is the skeleton of a website.So it should
+                    be well oriented and readable.A developer experience in
+                    working with HTML is most important.Expert developers are
+                    well versed in HTML.I'm working with HTML since 1 year.
+                    I'm also experienced of working with different templates.</p>
+                    <div class="htmlprog">
+                        <div>90%</div>
+                    </div>
+                </div>
+                <div>
+                    <h2>CSS</h2>
+                    <p>CSS is a styling language.CSS makes HTML elements look beautiful
+                       without CSS styling Website looks so dull and
+                    gloomy.I'm well versed in designing with HTML page
+                    with CSS.I know every kind of animations creation with CSS.
+                    I have 1 year working experience with CSS.</p>
+                    <div class="cssprog">
+                        <div>95%</div>
+                    </div>
+                </div>
+                <div>
+                    <h2>PHP</h2>
+                    <p>PHP is a language used mostly in web development, mainly
+                    for Back-end development.I'm a PHP developers.I'm in intermidiate
+                    level experience in php.</p>
+                    <div class="PHPprog">
+                        <div>75%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact_flex">
+        <h1 style="text-align: center">Contact Form</h1>
+        <div id="contact">
+            <form action="" method="post" id="f1">
+                <div>
+                    <h4>Fill out all fields...</h4>
+                </div>
+                <div>
+                    <label for="name">Name </label>
+                    <input type="text" id="name" name="nameTxt" required>
+                </div>
+                <div>
+                    <label for="eamil">Email </label>
+                    <input type="email" id="eamil" name="emailTxt" required>
+                </div>
+                <div>
+                    <label for="note">Note  </label>
+                    <textarea type="text" id="note" name="noteTxt" maxlength="150"
+                              required></textarea>
+                </div>
+                <div>
+                    <button form="f1" type="submit" value="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer_flex">
+            <div id="about" class="footer">
+                <div class="info">
+                    <p>MD shah samir</p>
+                    <p>Email :mdshahsamir@gmail.com</p>
+                    <p>Student of American International University-Bangladesh</p>
+                </div>
+                <div class="socialMediaLink">
+                    <p>Social Media Links</p>
+                    <a href="" target="_blank"><img src="Facebook.ico"
+                                                    alt="facebook icon"></a>
+                    <a href="#twitter" target="_blank"><img src="iconfinder_twitter_173834.ico"
+                                                            alt="twitter icon"></a>
+                    <a href="#instagram" target="_blank"><img src="iconfinder_Instagram_381384.ico"
+                                                              alt="instagram icon"></a>
+                    <p>Resource Links</p>
+                    <a href="#dropbox" target="_blank"><img src="iconfinder_dropbox_173882.ico"
+                                                            alt="dropbox icon"></a>
+                    <a href="#github" target="_blank"><img src="iconfinder_github_313481.ico"
+                                                           alt="github icon"></a>
+                </div>
+            </div>
+    </div>
+    <div id="topbtn">
+        <a href="#header"><img src="top%20button.ico"></a>
+    </div>
+</body>
+</html>

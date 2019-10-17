@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom right  ,white 50%,deepskyblue 50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+body h1{
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+   text-align: center;
+    color: black;
+    border: 4px outset black;
+    border-radius: 30px;
+    width: fit-content;
+    margin: auto;
+    padding: 7px 20px;
+}
+body h2{
+    float: left;
+    display: block;
+    margin: 40px;
+    font-size: 50px;
+}
+#turn{
+    margin: 20px;
+    font-size: 25px;
+    float: left;
+    display: block;
+}
+.header{
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+   display: flex;
+    margin: 5px;
+    overflow: hidden;
+}
+.header button{
+   border: 3px outset black;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 20px;
+   margin: 2px;
+    background-color: deepskyblue;
+    color: black;
+}
+.Game_Panel{
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+    float: left;
+    display: block;
+   margin: 25px;
+   width: 480px;
+    height: 480px;
+    border:4px outset black;
+    border-radius: 25px;
+    background-color: deepskyblue;
+    box-shadow: 20px 20px 5px rgba(0, 0, 0, 0.5) ;
+}
+.Game_Panel div div{
+    margin: 11px;
+    width: 135px;
+    height: 135px;
+    border: 1px outset black;
+    border-radius: 10px;
+    float:left;
+    background-color: white;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
+@media screen and (max-width: 600px){
+    .Game_Panel {
+        margin: 10px;
+        width: 250px;
+        height: 250px;
+
+    }
+}
+@media screen and (max-width: 600px) {
+    .Game_Panel div div{
+        margin: 7px;
+        width: 65px;
+        height: 65px;
+        font-size: 60px;
+    }
+}
+

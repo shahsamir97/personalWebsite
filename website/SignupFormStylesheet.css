@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#header{
+    margin: 20px;
+    padding: 10px;
+    border: 8px outset grey;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: deepskyblue;
+}
+#signup {
+    width: 70%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 40px;
+    border: 2px solid deepskyblue;
+    border-radius: 30px;
+}
+#signup div{
+    margin: 50px 10px;
+}
+#signup div div{
+    margin: 20px 20px;
+}
+
+#signup div div label{
+    font-size: 20px;
+}
+#signup div  div input{
+   height: 30px;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 19px;
+}
+@media screen and (max-width: 500px) {
+    #signup div  div input{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    #signup div  div input{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 900px) {
+    #signup div  div input{
+        width: 50%;
+    }
+}
+#radiobtn input{
+    width: 5vw!important;
+    height: 20px!important;
+}
+
+#btn{
+    margin-top: 20px!important;
+}
+.password input{
+    margin: 5px;
+}
+button{
+    font-weight: bold;
+    padding: 10px 20px!important;
+    font-size:20px !important;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+button:hover{
+    background-color: red;
+
+}
